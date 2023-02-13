@@ -1,0 +1,30 @@
+Collecting package metadata (current_repodata.json): ...working... done
+Solving environment: ...working... done
+
+## Package Plan ##
+
+  environment location: C:\Users\gregs\.conda\envs\finrlenv
+
+  added / updated specs:
+    - scikit-learn
+
+
+The following packages will be downloaded:
+
+    package                    |            build
+    ---------------------------|-----------------
+    joblib-1.1.1               |  py310haa95532_0         387 KB
+    scikit-learn-1.2.0         |  py310hd77b12b_0         6.5 MB
+    ------------------------------------------------------------
+                                           Total:         6.9 MB
+
+The following NEW packages will be INSTALLED:
+
+  joblib             pkgs/main/win-64::joblib-1.1.1-py310haa95532_0 None
+  scikit-learn       pkgs/main/win-64::scikit-learn-1.2.0-py310hd77b12b_0 None
+  threadpoolctl      pkgs/main/noarch::threadpoolctl-2.2.0-pyh0d69192_0 None
+
+
+Proceed ([y]/n)? Invalid choice: conda update -n base
+Proceed ([y]/n)? Invalid choice: conda update
+Proceed ([y]/n)? 

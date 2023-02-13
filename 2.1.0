@@ -1,0 +1,41 @@
+Collecting alpaca_trade_api
+  Using cached alpaca_trade_api-2.3.0-py3-none-any.whl (33 kB)
+Collecting websocket-client<2,>=0.56.0
+  Using cached websocket_client-1.5.1-py3-none-any.whl (55 kB)
+Collecting websockets<11,>=9.0
+  Downloading websockets-10.4-cp310-cp310-win_amd64.whl (101 kB)
+     -------------------------------------- 101.4/101.4 kB 1.9 MB/s eta 0:00:00
+Collecting msgpack==1.0.3
+  Downloading msgpack-1.0.3-cp310-cp310-win_amd64.whl (69 kB)
+     ---------------------------------------- 69.8/69.8 kB 4.0 MB/s eta 0:00:00
+Collecting PyYAML==6.0
+  Downloading PyYAML-6.0-cp310-cp310-win_amd64.whl (151 kB)
+     -------------------------------------- 151.7/151.7 kB 4.4 MB/s eta 0:00:00
+Requirement already satisfied: pandas>=0.18.1 in c:\users\gregs\.conda\envs\finrlenv\lib\site-packages (from alpaca_trade_api) (1.5.2)
+Collecting aiohttp==3.8.1
+  Downloading aiohttp-3.8.1-cp310-cp310-win_amd64.whl (555 kB)
+     -------------------------------------- 555.1/555.1 kB 5.8 MB/s eta 0:00:00
+Collecting deprecation==2.1.0
+  Using cached deprecation-2.1.0-py2.py3-none-any.whl (11 kB)
+Requirement already satisfied: requests<3,>2 in c:\users\gregs\.conda\envs\finrlenv\lib\site-packages (from alpaca_trade_api) (2.28.1)
+Requirement already satisfied: urllib3<2,>1.24 in c:\users\gregs\.conda\envs\finrlenv\lib\site-packages (from alpaca_trade_api) (1.26.14)
+Requirement already satisfied: numpy>=1.11.1 in c:\users\gregs\.conda\envs\finrlenv\lib\site-packages (from alpaca_trade_api) (1.23.5)
+Requirement already satisfied: multidict<7.0,>=4.5 in c:\users\gregs\.conda\envs\finrlenv\lib\site-packages (from aiohttp==3.8.1->alpaca_trade_api) (6.0.2)
+Requirement already satisfied: frozenlist>=1.1.1 in c:\users\gregs\.conda\envs\finrlenv\lib\site-packages (from aiohttp==3.8.1->alpaca_trade_api) (1.3.3)
+Requirement already satisfied: yarl<2.0,>=1.0 in c:\users\gregs\.conda\envs\finrlenv\lib\site-packages (from aiohttp==3.8.1->alpaca_trade_api) (1.8.1)
+Requirement already satisfied: aiosignal>=1.1.2 in c:\users\gregs\.conda\envs\finrlenv\lib\site-packages (from aiohttp==3.8.1->alpaca_trade_api) (1.2.0)
+Requirement already satisfied: async-timeout<5.0,>=4.0.0a3 in c:\users\gregs\.conda\envs\finrlenv\lib\site-packages (from aiohttp==3.8.1->alpaca_trade_api) (4.0.2)
+Requirement already satisfied: attrs>=17.3.0 in c:\users\gregs\.conda\envs\finrlenv\lib\site-packages (from aiohttp==3.8.1->alpaca_trade_api) (22.1.0)
+Requirement already satisfied: charset-normalizer<3.0,>=2.0 in c:\users\gregs\.conda\envs\finrlenv\lib\site-packages (from aiohttp==3.8.1->alpaca_trade_api) (2.0.4)
+Requirement already satisfied: packaging in c:\users\gregs\.conda\envs\finrlenv\lib\site-packages (from deprecation==2.1.0->alpaca_trade_api) (22.0)
+Requirement already satisfied: python-dateutil>=2.8.1 in c:\users\gregs\.conda\envs\finrlenv\lib\site-packages (from pandas>=0.18.1->alpaca_trade_api) (2.8.2)
+Requirement already satisfied: pytz>=2020.1 in c:\users\gregs\.conda\envs\finrlenv\lib\site-packages (from pandas>=0.18.1->alpaca_trade_api) (2022.7)
+Requirement already satisfied: certifi>=2017.4.17 in c:\users\gregs\.conda\envs\finrlenv\lib\site-packages (from requests<3,>2->alpaca_trade_api) (2022.12.7)
+Requirement already satisfied: idna<4,>=2.5 in c:\users\gregs\.conda\envs\finrlenv\lib\site-packages (from requests<3,>2->alpaca_trade_api) (3.4)
+Requirement already satisfied: six>=1.5 in c:\users\gregs\.conda\envs\finrlenv\lib\site-packages (from python-dateutil>=2.8.1->pandas>=0.18.1->alpaca_trade_api) (1.16.0)
+Installing collected packages: msgpack, websockets, websocket-client, PyYAML, deprecation, aiohttp, alpaca_trade_api
+  Attempting uninstall: aiohttp
+    Found existing installation: aiohttp 3.8.3
+    Uninstalling aiohttp-3.8.3:
+      Successfully uninstalled aiohttp-3.8.3
+Successfully installed PyYAML-6.0 aiohttp-3.8.1 alpaca_trade_api-2.3.0 deprecation-2.1.0 msgpack-1.0.3 websocket-client-1.5.1 websockets-10.4
