@@ -25,7 +25,8 @@ INDICATORS = [
     "rsi_30",
     "cci_30",
     "dx_30",
-    "close_30_sma",
+    "atr_10",
+    "close_20_sma",
     "close_60_sma",
 ]
 
