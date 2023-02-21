@@ -27,7 +27,8 @@ INDICATORS = [
     "dx_30",
     "atr_10",
     "close_20_sma",
-    "close_60_sma"
+    "close_60_sma",
+    "atr_10"
 ]
 
 
