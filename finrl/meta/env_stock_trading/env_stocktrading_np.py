@@ -6,18 +6,19 @@ from numpy import random as rd
 
 
 class StockTradingEnv(gym.Env):
+    #fitted to <10K
     def __init__(
         self,
         config,
-        initial_account=1e6,
+        initial_account=5e3,
         gamma=0.99,
         turbulence_thresh=99,
         min_stock_rate=0.1,
-        max_stock=1e2,
-        initial_capital=1e6,
-        buy_cost_pct=1e-3,
-        sell_cost_pct=1e-3,
-        reward_scaling=2**-11,
+        max_stock=1e1,
+        initial_capital=1e5,
+        buy_cost_pct=5e-2,
+        sell_cost_pct=5e-2,
+        reward_scaling=2**-10,
         initial_stocks=None,
     ):
         price_ary = config["price_array"]
