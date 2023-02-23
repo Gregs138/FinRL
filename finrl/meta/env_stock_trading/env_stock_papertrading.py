@@ -242,7 +242,7 @@ class AlpacaPaperTrading:
 
         self.stocks_cd += 1
         if self.turbulence_bool == 0:
-            min_action = 10  # stock_cd
+            min_action = 5  # stock_cd  changed from 10 for smaller account
             for index in np.where(action < -min_action)[0]:  # sell_index:
                 sell_num_shares = min(self.stocks[index], -action[index])
                 qty = abs(int(sell_num_shares))
