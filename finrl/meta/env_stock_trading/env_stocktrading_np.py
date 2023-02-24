@@ -13,11 +13,11 @@ class StockTradingEnv(gym.Env):
         initial_account=2e3,
         gamma=0.70,
         turbulence_thresh=99,
-        min_stock_rate=1,
-        max_stock=1e1,
+        min_stock_rate=5e-1, #defines the minimum percentage of your total portfolio value that can be invested in a single stock
+        max_stock=2e2, #parameter defines the maximum number of shares that can be purchased for a single stock. 
         initial_capital=2e3,
-        buy_cost_pct=5e-2,
-        sell_cost_pct=5e-2,
+        buy_cost_pct=1e-2, # if buy_cost_pct is set to 0.05 (i.e. 5%), and you buy a stock for $100, the actual cost will be $105
+        sell_cost_pct=1e-2, # if sell_cost_pct is also set to 0.05 (i.e. 5%), and you sell the same stock for $100, the actual amount received will be $95.
         reward_scaling=2**-10,
         initial_stocks=None,
     ):
@@ -39,7 +39,7 @@ class StockTradingEnv(gym.Env):
         self.gamma = gamma
         self.max_stock = max_stock
         self.min_stock_rate = min_stock_rate
-        self.buy_cost_pct = buy_cost_pct
+        self.buy_cost_pct = buy_cost_pct 
         self.sell_cost_pct = sell_cost_pct
         self.reward_scaling = reward_scaling
         self.initial_capital = initial_capital
