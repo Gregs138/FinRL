@@ -10,12 +10,12 @@ class StockTradingEnv(gym.Env):
     def __init__(
         self,
         config,
-        initial_account=2e3,
-        gamma=0.70,
+        initial_account=2e3, # is the amount of money that the agent will start with when it is reset to begin a new episode of trading.
+        gamma=0.85,
         turbulence_thresh=99,
         min_stock_rate=5e-1, #defines the minimum percentage of your total portfolio value that can be invested in a single stock
         max_stock=2e2, #parameter defines the maximum number of shares that can be purchased for a single stock. 
-        initial_capital=2e3,
+        initial_capital=2e3, #Leverage amount
         buy_cost_pct=1e-2, # if buy_cost_pct is set to 0.05 (i.e. 5%), and you buy a stock for $100, the actual cost will be $105
         sell_cost_pct=1e-2, # if sell_cost_pct is also set to 0.05 (i.e. 5%), and you sell the same stock for $100, the actual amount received will be $95.
         reward_scaling=2**-10,
